@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+<head>
+    <!---Michael Holmes -->
+    <meta charset="UTF-8">
+    <title>Surfside Golf &amp; Beach Resort</title>
+    <meta name="description" content="Surfside Golf and Beach Resort is a full-service resort in Miramar, Fl on Florida's Gulf Coast.">
+    <meta name="generator" content="Holmes, Michael">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="surfside.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://use.fontawesome.com/1dbc24bc86.js"></script>
+    <script src="https://use.typekit.net/suy7nma.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript" src="scripts/modernizr-custom.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <header role="banner">
+            <a href="#"><h1>Surfside Golf and Beach Resort</h1></a>
+            <h2>850-294-7611<br>1-800-489-SURF(7873)</h2>
+        </header> 
+        <nav role="navigation">
+            <h2>Main Navigation</h2>
+            <a href="#content" class="disappear" title="Skip to Content">Skip to Content</a>
+            <ul class="topnav" id="myTopnav">
+                <li class="icon">
+                <a href="javascript:void(0);" onclick="navResponsive()">☰</a>
+                </li>
+                <li>
+                    <a href="#" title="Surfside Golf and Beach Resort">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="makeReservation.html" title="Accommodations">Accommodations</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Golf">Golf</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Weddings">Weddings</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Things to Do">Things to do</a>    
+                <li>
+                    <a href="https://twitter.com/?lang=en" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="tel:1-800-489-7873" title="Call Surfside"><i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <script src=scripts/navigation.js></script>
+        </nav>
+        <section class="slideshow" onload="carousel" role="region">
+            <h2>Image Gallery</h2>
+            <img class="mySlides" src="images/view.png" alt="Majestic Views" title="Beach View">
+            <img class="mySlides" src="images/chair.png" alt="Your Chair Awaits" title="Chair on Beach">
+            <img class="mySlides" src="images/golf.png" alt="A Golfer's Paradise" title="Pompano Golf Course">
+            <img class="mySlides" src="images/dolphins.png" alt="Watch the Dolphins play at the Jetties or in the Gulf" title="Dolpins leaping in water">
+            <img class="mySlides" src="images/snorkel.png" alt="Go Snorkeling and discover marine life" title="Snorkeling">
+            <img class="mySlides" src="images/wedding.png" alt="The fairy tale wedding you've always dreamed" title="wedding">
+            <img class="mySlides" src="images/settingsun.png" alt="Sunsets with beauty beyond your imagination" title="setting sun over gulf">
+
+            <a class="btnleft" onclick="plusDivs(-1)">❮</a>
+            <a class="btnright" onclick="plusDivs(1)">❯</a>
+            <script src=scripts/gallery.js></script>
+        </section>
+        <main id="content" role="main">
+            <form name="availability" class="availabilityForm" role="form" method="post" action="scripts/availability.php">
+                <fieldset>
+                    <legend>Check Availability</legend>
+                    <label for="location">Desired Location</label>
+                    <select size="1" name="location" id="location" required="required">
+                        <option value="">Select Location...</option>
+                        <option value="Gulfwinds">Gulfwinds</option>
+                        <option value="Village Homes">Village Homes</option>
+                        <option value="Seminole">Seminole</option>
+                        <option value="Surfside Villas">Surfside Villas</option>
+                        <option value="Surfside Gulf Hotel">Surfside Gulf Hotel</option>
+                        <option value="Grand Surfside">The Grand Surfside</option>
+                    </select>
+
+                    <label for="numRooms">Number of Bedrooms</label>
+                    <input type="number" name="numRooms" id="numRooms" min="1" max="3" value="1"> 
+
+                    <label for="numUnits">Number of Units</label>
+                    <input type="number" name="numUnits" id="numUnits" min="1" value="1" max="10">
+
+                    <label for="arrival">Arrival Date</label>
+                    <input type="date" name="arrival" id="arrival" min="2016-11-01" max=2026-10-31 required="required">
+
+                    <label for="departure">Departure Date</label>
+                    <input type="date" name="departure" id="departure" min="2016-11-01" max=2026-10-31 required="required">
+
+                    <label for="numAdults">Adults</label>
+                    <input type="number" name="numAdults" id="numAdults" min="1" max="100" required="required" value="1">
+
+                    <label for="numKids">Kids</label>
+                    <input type="number" name="numKids" id="numKids" min="0" max="100" value="0"> 
+
+                    <label for="groupCode">Group Code</label>
+                    <input type="text" size="7" pattern="[A-Z]{2}[A-Za-z0-9]{4}" name="groupCode" id="groupCode" title="2 uppercase letters follwed by any combination of 4 numbers or lowercase or uppercase letters">
+
+                    <label for="promoCode">Promo Code</label>
+                    <input type="text" size="7" pattern="[A-Za-z0-9]{5}" name="promoCode" id="promoCode" title="5 uppercase or lowecase letters or numbers">
+
+                    <input type="submit" value="Check Availability" class="submitButton">
+
+                </fieldset>
+            </form>
+            <section role="region">
+                <h2>Surfside Golf and Beach Resort</h2>
+                <p><strong>Surfside Golf and Beach Resort</strong> features beautiful 1, 2, and 3 bedroom condos and great views of the Gulf.  Come and relax on the beach, dine at one of our restaurants, take a dip in our beachside pools, or play a round on one of our championship golf courses.</p>
+
+                <p>Go for a swim, paddleboard, kayak or snorkel in the emerald green waters or just hang out on our 1100 feet of white sand beaches.  Build a sand castle or go crabbing.</p>
+
+                <p>Spanning the main highway loaded with award-winning restaurants, shopping, and other great family attractions.  We stretch from the Gulf of Mexico to Seminole Bay packed with condos, hotels, golf courses, Bayside Village and its excellent night life and award winning restaurants, and many more amenities.</p>
+
+                <p>Plan your visit today and see why so many make Surfside their choice year after year for summertime fun and relaxation on the Gulf Coast!</p>
+
+            </section>
+            <article role="article" class="views">
+                <h3>Great Views</h3>
+                <figure class="left">
+                    <img src=images/leftview.png alt="View of the beach from our beachside pool deck" title="Beach View">
+                    <figcaption>Beach View</figcaption>
+                </figure>
+                <figure class="right">
+                    <img src="images/sunset.png" alt="Sunset over the Gulf" title="Gulf Sunset">
+                    <figcaption>Gulf Sunset</figcaption>
+                </figure>
+                <p>Picturesque views abound at Surfside. From the balconies of our beachside condominiums and hotels, you can see the inviting Gulf waters and sugary white sand beaches.  Our bayside condos and villas feature views of the peaceful and tranquil waters of Seminole Bay or the exciting nightlife of Baytowne Village.</p>
+                
+                
+            </article>
+            <article role="article" class="golf">
+                <h3>Championship Golf</h3>
+                <figure class="golfFigure">
+                    <img src="images/golfpic.png" alt="The 12th hole of our Dolphin Course" title="Dolpin Course">
+                    <figcaption>Dolphin Course Hole 12</figcaption>
+                </figure>
+                <p>Surfside features four championship golf courses spread across the resort. Our courses wind their way through both sides of the resort. Play along Seminole Bay or amid natural beauty of the area. Book your tee time today</p>
+            </article>
+            
+        </main>
+        <footer role="contentinfo">
+            <h2>Surfside Golf and Beach Resort</h2>
+            <h3 class="address">2800 Surfside Blvd.<br>Miramar, FL 32541</h3>
+            <img src="images/FooterLogo.png" alt="Surfside Golf and Beach Resort" width="405">
+            
+            <h3 class="phone">850-294-7611<br>1-800-489-SURF(7873)</h3>
+            <ul>
+                <li>
+                    <a href="#" title="Real Estate">Real Estate</a>
+                </li>
+                <li>
+                    <a href="#" title="Owners">Owner Log In</a>
+                </li>
+            </ul>
+            <p>&copy;Surfside Golf and Beach Resort 2016</p>
+            <p class="disclaimer">This site is for educational purposes only. Michael Holmes mholmes5@asu.edu</p>
+        </footer>
+    </div>    
+</body>
+    
+    
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+<head>
+    <!---Michael Holmes -->
+    <meta charset="UTF-8">
+    <title>Surfside Resort Reservations</title>
+    <meta name="description" content="Surfside Golf and Beach Resort is a full-service resort in Miramar, Fl on Florida's Gulf Coast.">
+    <meta name="generator" content="Holmes, Michael">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="surfside.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://use.fontawesome.com/1dbc24bc86.js"></script>
+    <script src="https://use.typekit.net/suy7nma.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript" src="scripts/modernizr-custom.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+
+</head>
+<body>
+    <div id="wrapper">
+        <header role="banner">
+            <a href="index.html"><h1>Surfside Golf and Beach Resort</h1></a>
+            <h2>850-294-7611<br>1-800-489-SURF(7873)</h2>
+        </header> 
+        <nav role="navigation">
+            <h2>Main Navigation</h2>
+            <a href="#content" class="disappear" title="Skip to Content">Skip to Content</a>
+            <ul class="topnav" id="myTopnav">
+                <li class="icon">
+                <a href="javascript:void(0);" onclick="navResponsive()">☰</a>
+                </li>
+                <li>
+                    <a href="index.html" title="Surfside Golf and Beach Resort">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Accommodations">Accommodations</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Golf">Golf</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Weddings">Weddings</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="Things to Do">Things to do</a>    
+                <li>
+                    <a href="https://twitter.com/?lang=en" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="tel:1-800-489-7873" title="Call Surfside"><i class="fa fa-phone fa-rotate-270" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <script src=scripts/navigation.js></script>
+        </nav>
+        <section class="slideshow" onload="carousel" role="region">
+            <h2>Image Gallery</h2>    
+            <img class="mySlides" src="images/condoBeachView.png" alt="View of the beach from Gulfwinds Condos" title="Gulfwinds Beach View ">
+            <img class="mySlides" src="images/condoResortView.png" alt="View of the resort from one of our condos" title="Condo Resort View">
+            <img class="mySlides" src="images/condoPool.png" alt="One of our many pools available to guests" title="Condo Resort Pool">
+            <img class="mySlides" src="images/condoInterior.png" alt="The interior of one of our condos" title="Condo Interior">
+            <img class="mySlides" src="images/grandSurfside.png" alt="The Grand Surfside Hotel" title="Grand Surfside Hotel">
+            <a class="btnleft" onclick="plusDivs(-1)">❮</a>
+            <a class="btnright" onclick="plusDivs(1)">❯</a>
+            <script src=scripts/gallery.js></script>    
+        </section>
+        <main id="content" role="main">
+            <h2>Book your Reservation today</h2>
+            <p>Required Fields marked with Asterisk(*)</p>
+            <form class="reservationForm" role="form" name="bookReservation" id="bookReservation" method="post" action="scripts/reservationConfirmation.php">
+                <label for="fname">First Name*:</label>
+                <input type="text" name="fname" id="fname" required="required">
+                
+                <label for="lname">Last Name*:</label>
+                <input type="text" name="lname" id="lname" required="required">
+                
+                <label for="address">Address*:</label>
+                <input type="text" name="address" id="address" size="50" required>
+                
+                <label for="city">City*:</label>
+                <input type="text" name="city" id="city" required>
+                
+                <label for="state">State*:</label>
+                <select size="1" name="state" id="state" required>
+                    <option value="">Select State...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+                
+                <label for="zip">Zip*:</label>
+                <input type="text" name="zip" id="zip" size="6">
+                
+                <label for="phone">Phone*:</label>
+                <input type="tel" name="phone" id="phone" required="required">
+                
+                <label for="email">Email*:</label>
+                <input type="email" name="email" id="email" required="required">
+                
+                <label for="location">Desired Location*</label>
+                <select size="1" name="location" id="location" required="required">
+                    <option value="">Select Location...</option>
+                    <option value="Gulfwinds">Gulfwinds</option>
+                    <option value="Village Homes">Village Homes</option>
+                    <option value="Seminole">Seminole</option>
+                    <option value="Surfside Villas">Surfside Villas</option>
+                    <option value="Surfside Gulf Hotel">Surfside Gulf Hotel</option>
+                    <option value="Grand Surfside">The Grand Surfside</option>
+                </select>
+                
+                <label for="numUnit">Unit Number*</label>
+                <input type="text" name="numUnit" id="numUnit" size="10" required>
+                
+                <label for="arrival">Arrival Date*</label>
+                <input type="date" name="arrival" id="arrival" min="2016-11-01" max=2026-10-31 required="required">
+                
+                <label for="departure">Departure Date*</label>
+                <input type="date" name="departure" id="departure" min="2016-11-01" max=2026-10-31 required="required">
+                
+                <label for="numAdults">Adults*</label>
+                <input type="number" name="numAdults" id="numAdults" min="1" max="100" required="required" value="1">
+
+                <label for="numKids">Kids</label>
+                <input type="number" name="numKids" id="numKids" min="0" value="0" max="100"> 
+                
+                <label for="groupCode">Group Code</label>
+                <input type="text" size="7" pattern="[A-Z]{2}[A-Za-z0-9]{4}" name="groupCode" id="groupCode" title="2 uppercase letters follwed by any combination of 4 numbers or lowercase or uppercase letters">
+
+                <label for="promoCode">Promo Code</label>
+                <input type="text" size="7" pattern="[A-Za-z0-9]{5}" name="promoCode" id="promoCode" title="5 uppercase or lowecase letters or numbers">
+                <br>
+                <input class="submitButton" type="submit" value="Book Reservation">
+            </form>
+        </main>
+        <footer role="contentinfo">
+            <h2>Surfside Golf and Beach Resort</h2>
+            <h3 class="address">2800 Surfside Blvd.<br>Miramar, FL 32541</h3>
+            <img src="images/FooterLogo.png" alt="Surfside Golf and Beach Resort" width="405">
+            
+            <h3 class="phone">850-294-7611<br>1-800-489-SURF(7873)</h3>
+            <ul>
+                <li>
+                    <a href="#" title="Real Estate">Real Estate</a>
+                </li>
+                <li>
+                    <a href="#" title="Owners">Owner Log In</a>
+                </li>
+            </ul>
+            <p>&copy;Surfside Golf and Beach Resort 2016</p>
+            <p class="disclaimer">This site is for educational purposes only. Michael Holmes mholmes5@asu.edu</p>
+        </footer>
+    </div>
+</body>
+    
+    
+</html>

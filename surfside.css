@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/* Michael Holmes */
+
+/* Global Styles */
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    margin-top:0;
+}
+
+#wrapper{
+    background-color: #E7E3E3;
+	opacity:0.8;
+    width:100%;
+	margin-right:auto;
+	margin-left:auto;
+    padding: 0px;
+    
+}
+
+@media screen and (min-width:960px){
+    body{
+        background-image: url(images/Surf.png);
+        background-repeat:repeat-x;
+        background-size: cover;
+    }
+    #wrapper{
+        width: 90%;
+    }
+}
+
+header{
+    color:#486C65;    
+    height: 175px;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-image: url(images/FooterLogo.png);
+    width:100%;
+    margin:0;
+}
+
+header h2{
+    display: none;
+}
+
+@media screen and (min-width:760px){
+    header{
+        background-image: url(images/headerLogo.png);
+        height: 16em;
+    }
+    
+    header h2{
+        display: block;
+        float: right;
+        margin-right: 1%;
+    }
+}
+
+h1{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+nav{
+	font-size:1.5em;
+    background-color: #93AEB8;
+    color:#E7E3E3;
+    position: relative;
+}
+
+nav h2{
+    display: none;
+}
+
+.disappear{
+    position: absolute;
+    text-indent: -9999px;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #93AEB8;
+}
+
+ul.topnav li {float: left; margin-right:3%; margin-top:1%;}
+
+ul.topnav li a {
+  display: inline-block;
+  color:#E7E3E3;
+  text-align: center;
+  padding: 4% 4%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul.topnav li a:hover{background-color: #486C65;}
+
+
+ul.topnav li.icon {display: none;}
+ul.topnav li:last-child{
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    ul.topnav li:last-child{
+    display: inline-block;
+    }
+}
+@media screen and (max-width:870px) {
+    ul.topnav li:not(:last-child) {display: none;}
+    ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+    }
+    
+}
+
+@media screen and (max-width:870px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+a:focus{
+    outline: #486C65 solid 2px;
+}
+
+section h2{
+    display: none;
+}
+
+.slideshow{
+    max-width: 960px;
+    position: relative;
+}
+
+.mySlides{
+    width: 100%;
+    
+}
+
+.btnleft{
+    float: left;
+    position:absolute;
+    top:45%;
+    left:1%;
+    padding: 1%;
+    background-color: black;
+    color:#E7E3E3;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btnright{
+    float: right;
+    position:absolute;
+    top:45%;
+    right:1%;
+    padding: 1%;
+    background-color: black;
+    color:#E7E3E3;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+main{
+    color:#60807C;
+    margin-top:1%;
+}
+
+fieldset{
+    border: .1em solid #486C65;
+}
+
+@media screen and (min-width:960px){
+    fieldset{float: right; width: 20%;}
+}
+
+legend{
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.availabilityForm label + input , select{
+    display:block;
+    margin-top:.25%;
+}
+
+.reservationForm label{
+    margin-left:3%;
+    margin-top: 3%;
+}
+
+.submitButton{
+    margin-top: 1.5%;
+    background-color: #486C65;
+    color:#E7E3E3;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: #486C65 solid 2px;
+}
+
+select:focus{
+    outline: #486C65 solid 2px;
+}
+.reservationForm label + input , select{
+    display:block;
+    margin-top:.25%;
+}
+
+.reservationForm input,select{
+    margin-left: 3%;
+}
+
+strong{
+    font-size: 1.2em;
+}
+
+main h3{
+    font-family:"tornac",cursive;
+    font-size: 1.3em;
+    clear: both;
+}
+
+
+
+figure{
+    float:left;
+    margin-left: .2%;
+    margin-right:5.5%;
+}
+.golfFigure{
+    margin-right: .5%;
+}
+
+figcaption{
+    font-size: .75em;
+}
+
+@media screen and (min-width:1050px){
+    .views{
+        float:left;
+        width: 36%;
+    }
+    .golf{
+        float: left;
+        width:36%;
+        margin-left: 2%;
+        border-left: 1px solid #486C65;
+        padding-left: 1%;
+    }
+    figure{
+        float: none;
+    }
+    .left{
+        float: left;
+        margin-right: 1%;
+    }
+    .right{
+        float: left;
+    }
+}
+
+footer h3{
+    font-size: .75em;
+    color: #486C65;
+}
+
+.address{
+   float:left;
+    margin-left:3%;
+}
+
+.phone{
+    float: right;
+}
+
+
+footer ul{
+    clear: both;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-left: 12%;
+}
+footer ul li a{
+    text-decoration: none;
+    margin-right: .5%;
+    padding:1.25%;
+    color: #486C65;
+    font-size: .9em;
+}
+
+footer p{
+    font-size: .6em;
+    margin:0;
+    padding:0.5%;
+    margin-left:27.5%;
+    margin-right: 27.5%;
+}
+
+.disclaimer{
+    margin:0 auto;
+    padding-left: 2%;
+}
+
+footer h2{
+    background-image: url(images/wave.png);
+    background-repeat: no-repeat;
+    font-family: "Lakeside",cursive;
+    font-size: 3.5em;
+    color:#486C65;
+    margin-bottom:0
+}
+
+footer img{
+    display: none;
+}
+
+@media screen and (min-width:540px){
+    footer{
+        clear: both;
+        margin-top: 1%;
+    }
+    
+    footer h2{
+        display: none;
+    }
+    
+    .address{
+        color:#486C65;
+        float:left;
+        padding:1%;
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+    
+    footer img{
+        display: block;
+        float: left;
+        margin: 1%;
+    }
+
+    .phone{
+        color:#486C65;
+        float:left;
+        margin-left:2%;
+        padding:1%;
+
+    }
+    
+    
+}
+
+
+
